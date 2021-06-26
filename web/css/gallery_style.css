@@ -1,0 +1,174 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jun 20, 2021, 10:25:36 PM
+    Author     : hoang
+*/
+#content{
+    padding-bottom: 150px;
+}
+.container{
+    width: 700px;
+    height: 465px;
+}
+
+.thumbnail>a>img{
+    width: 100%;
+    height: 100%;
+}
+
+.slide-content{
+    position: relative;
+    padding-top: 11px;
+    padding-bottom: 22px;
+}
+/*Design slides show*/
+.span3{
+    height: 160px;
+    display: flex;
+    justify-content: center;
+}
+
+.mySlides{
+    z-index: -1;
+        width: 700px;
+    height: 465px;
+    text-align: center;
+}
+.mySlides>img{
+    width: 100%;
+    height: 100%;
+}
+/*End-Design slides show*/
+
+/*Design list thumbnail image*/
+.thumbnails{
+    padding-left: 0px;
+    margin: 0 0 10px 0;
+}
+.thumbnails li{
+    display: inline-block;
+    background-color: rgb(255,255,255);
+    width: 23.40425532%;
+    margin-left: 10px;
+    border-radius: 6px;
+}
+.thumbnails li:first-child{
+    margin-left: 0;
+}
+.thumbnail{
+    height: 94.3px;
+    width: 142px;
+    margin: auto;
+}
+
+/*End-Design list thumbnail image*/
+
+/*Play button in the center of the slides*/
+#play-button-containter{
+  width: 205px;
+  height: 75px;
+  background-color: rgba(0,0,0,0.3);
+  display:flex;
+  border-radius: 6px;
+  z-index: 10;
+  margin:auto;
+  margin-top: -40%;
+  position: relative;
+  z-index: 2;
+}
+/*Design div outer play button*/
+#play-button-outer {
+  width: 50px;
+  height: 50px;
+  margin: auto;
+  margin-left: 10px;
+  background-color: rgb(0, 0, 0);
+  display: flex;
+  z-index: 2;
+  border: 3px solid rgba(255,255,255,0.8);
+  border-radius: 5px;
+}
+/*Design play button*/
+#play-button {
+  margin: auto;
+  position: relative;  
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 15px 0 15px 30px;
+  border-color: transparent transparent transparent white; 
+  z-index: 2;
+}
+/*Set text: "Play" in the right play button*/
+#text-button{
+  display: flex;
+  margin: auto;
+  color: rgb(255,255,255);
+}
+/*On hover change back ground color with little bit see-through*/
+#play-button-containter:hover {
+  background-color: rgba(0, 0, 0, .5);
+}
+/*End-Play button in the center of the slides*/
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 10px;
+  margin-top: -7%;
+  color: white;
+  font-weight: bold;
+  font-size: 25px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+/*Set position for play/pause button in bottom of slides*/
+#play-pause-button-container {
+    display: inline-block;
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    right: 46%;
+    bottom: 30px;
+    opacity: 0.6;
+  }
+  /*Design play/pause button*/
+ .play-pause-button {
+    display: inline-block;
+    position: absolute;
+    margin: 0;
+    margin-bottom: 0;
+    width: 25px;
+    height: 25px;
+    background: #fff;
+    transition: clip-path .3s ease;
+  }
+  
+/* Draw button [>] by 2 part*/
+  .play-pause-button-before {
+    clip-path: polygon(0 0, 50% 25%, 50% 75%, 0% 100%);
+  }
+  .play-pause-button-after {
+    clip-path: polygon(50% 25%, 100% 50%, 100% 50%, 50% 75%);
+  }
+  

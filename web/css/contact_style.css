@@ -1,0 +1,46 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jun 21, 2021, 11:12:46 PM
+    Author     : hoang
+*/
+p   {
+    margin: 0;
+    line-height: 23px;
+}
+
+#infor{
+    margin-top: 22px;
+    margin-bottom: 50px;
+}
+#infor>h4{
+    font-family: 'Times New Roman',Helvetica,Arial,sans-serif;
+    font-size: 22px;
+    line-height: 24px;
+    padding-bottom: 10px;
+}
+#address{
+    font-family: 'Open Sans',Helvetica,Arial,sans-serif;
+    font-size: 16px;
+    margin-bottom: 22px;
+}
+
+.contact-infor{
+    padding-left: 50px;
+}
+.contact-infor>a{
+    color: rgb(245,245,245);
+}
+/*Design embed map*/
+#emb-map{
+    width: 100%;
+    height: 525px;
+    margin-bottom: 50px;
+}
+#emb-map>iframe{
+    width: 100%;
+    height: 100%;
+}

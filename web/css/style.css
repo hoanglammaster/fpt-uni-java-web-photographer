@@ -1,0 +1,280 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jun 19, 2021, 3:01:05 PM
+    Author     : hoang
+*/
+
+html {
+    height: 100%;
+    box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+body {
+    position: relative;
+    margin: 0;
+    min-height: 100%;
+    font-family: 'Open Sans',Helvetica,Arial,sans-serif;
+}
+h4{
+    margin: 0;
+    font-weight: 400;
+}
+img{
+    max-width: 100%;
+    width: auto;
+    height: auto;
+    vertical-align: middle;
+    border: 0;
+}
+
+
+/*-*/
+/*css for nav*/
+/*-*/
+nav {
+    background-color: rgb(48, 48, 48);
+    top:0;
+}
+.nav-bar{
+    width: 940px;
+    height: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    border-right: 1px solid transparent;
+    border-image: linear-gradient(to bottom, rgb(217, 217, 217,0.4) 20%, black 150%);
+    border-image-slice: 1;
+}
+.nav-bar li {
+    display: inline-block;
+    font-size: 16px;
+    padding: 10px 15px;
+    border-left: 1px solid transparent;
+    border-image: linear-gradient(to bottom, rgb(217, 217, 217,0.4) 20%, black 150%);
+    border-image-slice: 1;
+}
+.nav-bar li a{
+    color: white;
+    text-decoration:  none;
+}
+.nar-bar li a:active{
+    font-weight: 600px;
+}
+/*-*/
+/*css for header*/
+/*-*/
+header {
+    background-color: rgb(115, 42, 45);
+    height: 130px;
+    font-family: 'Times New Roman',Helvetica,Arial,sans-serif;
+}
+header #header-content{
+    width: 940px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 15px 0 30px 0;
+    color: rgb(255, 255, 255);
+}
+#icon{
+    width: 90px;
+}
+#title-link{
+    margin-left: 93px;
+    font-size: 47px;
+    font-weight: 400;
+    color: rgb(255,255,255);
+    text-decoration: none;
+}
+
+#title-link:hover{
+    text-decoration: underline;
+}
+#sub-title{
+    top:0;
+    font-size: 22px;
+    padding-bottom: 5px;
+}
+/*-*/
+/*css for content*/
+/*-*/
+#wapper{
+    background-image: url(../img/kaleidoscope.png);
+    background-color: rgb(164, 57, 60);
+}
+#content {
+    margin: 0 auto;
+    padding-top: 30px;
+    width: 940px;
+    min-height: 450px;
+}
+.heading{
+    padding: 10px 0;
+}
+/*Design page title*/
+.page-title{
+    font-family: 'Times New Roman',Helvetica,Arial,sans-serif;
+    font-size: 28px;
+    line-height: 32.8px;
+    font-weight: 400;
+    color: rgb(255,255,255);
+    margin: 0;
+}
+/*left side*/
+#left-side{
+    width: 700px;
+    float: left;
+}
+.view-img{
+    height: 145px;
+}
+.view-img>img{
+    width: 100%;
+    height: 100%;
+}
+#title-img{
+    padding: 6px 1px;
+    font-size: 14.4px;
+    color: rgba(255,255,255,0.8);
+}
+.sub-content{
+    padding: 10px 0;
+    word-spacing: 1.5px;
+    color: rgb(245,245,245);
+}
+.sub-content ul{
+    padding: 0;
+    color: rgb(245,245,245);
+}
+.sub-content li{
+    display: inline-block;
+    width: 32.5%;
+    padding-right: 10px;
+}
+.sub-content li h4{
+    margin-top: 5px;
+    font-size: 22px;
+    font-family: 'Times New Roman',Helvetica,Arial,sans-serif;
+}
+.sub-content li a{
+    text-decoration: underline;
+    color: rgb(245,245,245);
+}
+.sub-content li a:hover{
+    text-decoration: none;
+}
+.article h3{
+    font-size: 28px;
+    font-weight: 400;
+    font-family: 'Times New Roman',Helvetica,Arial,sans-serif;
+    margin: 0 0 15px 0;
+}
+#article-content{
+    margin: 0 0 50px 0;
+}
+/*right side*/
+#right-side{
+    width: 240px;
+    float: right;
+    padding-left: 20px;
+}
+#heading-right-side{
+    background-color:  rgb(48, 48, 48);
+    padding: 5px 0;
+    color: rgb(255,255,255);
+}
+#heading-right-side h4{
+    font-size: 22px;
+    font-family: 'Times New Roman',Helvetica,Arial,sans-serif;
+    margin: 0;
+    padding-left: 15px;
+    font-weight: 400;
+}
+#share-link ul{
+    margin: 0;
+    padding: 6px 15px 11px 15px;
+}
+#share-link li{
+    list-style-type: none;
+    margin: 0;
+    padding-bottom: 5px;
+}
+#share-link li a{
+    color: rgb(255,255,255);
+    font-size: 16px;
+}
+#share-link{
+    background-color: rgba(0, 0, 0, 0.1);
+}
+.link-text{
+    margin-left: 8px;
+}
+/*after content*/
+#content::after{
+    display: table;
+    clear: both;
+    content: "";
+}
+
+/*-*/
+/*css for footer*/
+/*-*/
+footer {
+    background: rgb(48, 48, 48);
+    position: relative;
+    width: 100%;
+    height: 88px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+#footer-content{
+    width: 940px;
+    height: 36px;
+    padding: 22px 25px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#view-page{
+    float: right;
+}
+.counter-item{
+    border: solid 0 #fff;
+    background: #fff;
+    font-size: 14.4px;
+    font-family: Arial,Helvetica,Arial,sans-serif;
+    line-height: 14.4px;
+    padding: 2px 2px 1.5px;
+    margin: 3px 2px 0 0;
+    border-radius: 4px;
+    box-shadow: 0 1px 2px #595959;
+    float: left;
+    text-align: center;
+    color: #000;
+    font-weight: 700;
+    width: 13px;
+    position: relative;
+    text-decoration: none;
+    position: relative;
+}
+
+
+.counter-item::before{
+    content: '';
+    width: 100%;
+    position: absolute;
+    right: 0;
+    top: calc( 40% - 1.5px );
+    border-bottom: 1px solid rgb(48,48,48);
+}
+

@@ -1,0 +1,72 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jun 24, 2021, 8:19:15 PM
+    Author     : hoang
+*/
+.photo-control{
+    color: rgb(255,255,255);
+}
+.padding-left{
+    padding-left: 10px;
+}
+button{
+    background-color:  transparent;
+    border: none;
+    color: rgb(255,255,255);
+}
+.background-button{
+    background-image: linear-gradient(to bottom,#722f31,#4e2021);
+    background-repeat: repeat-x;
+    border-radius: 6px;
+    border-color: rgba(0,0,0,.1)rgba(0,0,0,.1)rgba(0,0,0,.25);
+    box-shadow: inset 0 1px 0 rgb(255 255 255 / 20%), 0 1px 2px rgb(0 0 0 / 5%);
+    text-decoration: none;
+    font-size: 14.4px;
+    line-height: 21.6px;
+    padding: 0 11px;
+
+}
+
+.back-butotn{
+    display: inline-block;
+    position: absolute;
+}
+.back-butotn>a{
+    color: rgb(255,255,255);
+    text-decoration: none;
+}
+
+.small-button {
+    display:inline-block;
+    position: inherit;
+    width: 100%;
+    text-align: center;
+    box-sizing: border-box;
+}
+.button-left{
+    display: inline-block;
+    margin-right: 10px;
+}
+.button-right{
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.big-image{
+    width: 700px;
+    height: 465px;
+    margin: 30px 0 70px 0;
+}
+.image-max-percent{
+    width: 100%;
+    height: 100%;
+}
+.view-icon{
+    position: absolute;
+    font-family: Consolas, monospace;
+    text-shadow: 1px 1px rgb(255,255,255);
+}
